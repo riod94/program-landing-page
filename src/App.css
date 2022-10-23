@@ -1,0 +1,14 @@
+.carousel-container {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    margin-top: -70px;
+}
+
+.carousel-item {
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}

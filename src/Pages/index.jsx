@@ -57,7 +57,7 @@ function Dashboard(props) {
 			<Hero />
 			<section className="container max-w-screen mx-auto py-14 px-6">
 				<motion.div
-					viewport={{ once: false }}
+					viewport={{ once: true }}
 					initial={{ opacity: 0, y: -100 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ type: "just", duration: 1.2, delay: 0.95 }}
@@ -89,7 +89,7 @@ function Dashboard(props) {
 				</div>
 				<div className="flex justify-center my-12">
 					<motion.div
-						viewport={{ once: false }}
+						viewport={{ once: true }}
 						initial={{ opacity: 0, y: 100 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ type: "just", duration: 1, delay: 0.55 }}

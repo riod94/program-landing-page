@@ -5,7 +5,7 @@ function Footer(props) {
 	return (
 		<footer className="p-4 py-8 bg-primary-100 text-white shadow xl:px-24 xl:py-16">
 			<motion.div
-				viewport={{ once: false }}
+				viewport={{ once: true }}
 				initial={{ opacity: 0, y: 100 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ type: "just", duration: 1, delay: 0.33 }}
@@ -14,7 +14,7 @@ function Footer(props) {
 				<div className="flex flex-row gap-4 justify-between">
 					<div className="flex flex-col gap-6">
 						<motion.div
-							viewport={{ once: false }}
+							viewport={{ once: true }}
 							initial={{ opacity: 0, x: -100 }}
 							whileInView={{ opacity: 1, x: 0 }}
 							transition={{
@@ -36,7 +36,7 @@ function Footer(props) {
 							</a>
 						</motion.div>
 						<motion.div
-							viewport={{ once: false }}
+							viewport={{ once: true }}
 							initial={{ opacity: 0, x: -100 }}
 							whileInView={{ opacity: 1, x: 0 }}
 							transition={{
@@ -59,7 +59,7 @@ function Footer(props) {
 							</div>
 						</motion.div>
 						<motion.div
-							viewport={{ once: false }}
+							viewport={{ once: true }}
 							initial={{ opacity: 0, x: 100 }}
 							whileInView={{ opacity: 1, x: 0 }}
 							transition={{
@@ -82,7 +82,7 @@ function Footer(props) {
 					</div>
 					<div className="flex space-x-6 justify-center items-center">
 						<motion.div
-							viewport={{ once: false }}
+							viewport={{ once: true }}
 							initial={{ opacity: 0, x: -100 }}
 							whileInView={{ opacity: 1, x: 0 }}
 							transition={{
@@ -111,7 +111,7 @@ function Footer(props) {
 							</a>
 						</motion.div>
 						<motion.div
-							viewport={{ once: false }}
+							viewport={{ once: true }}
 							initial={{ opacity: 0, x: -100 }}
 							whileInView={{ opacity: 1, x: 0 }}
 							transition={{
@@ -140,7 +140,7 @@ function Footer(props) {
 							</a>
 						</motion.div>
 						<motion.div
-							viewport={{ once: false }}
+							viewport={{ once: true }}
 							initial={{ opacity: 0, x: -100 }}
 							whileInView={{ opacity: 1, x: 0 }}
 							transition={{
@@ -165,7 +165,7 @@ function Footer(props) {
 							</a>
 						</motion.div>
 						<motion.div
-							viewport={{ once: false }}
+							viewport={{ once: true }}
 							initial={{ opacity: 0, x: -100 }}
 							whileInView={{ opacity: 1, x: 0 }}
 							transition={{

@@ -60,10 +60,10 @@ function Hero(props) {
 			if (element) {
 				let offset = window.pageYOffset;
 				element.style.backgroundPositionY = offset * -0.055 + "rem";
-				element.children[index].style.bottom = offset * 0.1 + "rem";
-				if (offset < 75) {
-					element.children[index].style.bottom = "1rem";
-				}
+				// element.children[index].style.bottom = offset * 0.1 + "rem";
+				// if (offset < 75) {
+				// 	element.children[index].style.bottom = "1rem";
+				// }
 			}
 		}
 		window.addEventListener("scroll", scrollHandler);
@@ -75,7 +75,7 @@ function Hero(props) {
 		<div
 			ref={parallax}
 			{...props}
-			className="carousel-container flex flex-col"
+			className="carousel-container flex flex-col -mt-64 lg:-mt-20"
 			style={{
 				backgroundImage: `url(${data[index]?.image})`,
 				transition: "0.9s ease-in-out",
@@ -84,7 +84,7 @@ function Hero(props) {
 			{data.map((item, i) => (
 				<div
 					key={i}
-					className="carousel-item absolute bottom-4 px-4 lg:px-20"
+					className="carousel-item absolute bottom-16 lg:bottom-4 px-4 lg:px-20"
 					// style={{ transition: 'all 1.0s ease-in-out' }}
 				>
 					{i == index && (

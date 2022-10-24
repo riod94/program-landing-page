@@ -11,7 +11,7 @@ function Card({
 	let i = Math.random(9);
 	return (
 		<motion.div
-			viewport={{ once: false }}
+			viewport={{ once: true }}
 			initial={{ opacity: 0, y: 100 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ type: "just", duration: 1.5, delay: i * .75 }}
